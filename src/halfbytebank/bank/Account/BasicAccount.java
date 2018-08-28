@@ -4,15 +4,15 @@ import halfbytebank.bank.Milliceavous.NumberValuation;
 import halfbytebank.bank.exeptions.BankingExeptions.NegativeValueException;
 import halfbytebank.bank.exeptions.BankingExeptions.NotEnouthBalanceException;
 
-public abstract class BasicAccount {
+abstract class BasicAccount {
 
 	private int accountNumber;
 	private int verificationOfNumber;	
 	private int bankAgency;
 	private int verificationOfAgency;
 	private double balance;
-
-	protected boolean withdraw(double value){
+	
+	public boolean withdraw(double value){
 		if (value <= 0) {
 			throw new NegativeValueException();
 		} else if(this.getBalance() < value) {
@@ -22,7 +22,7 @@ public abstract class BasicAccount {
 		return true;
 	}
 	
-	protected boolean deposit(double value){
+	public boolean deposit(double value){
 		if (value <= 0) {
 			throw new NegativeValueException();
 		}
@@ -30,7 +30,7 @@ public abstract class BasicAccount {
 		return true;
 	}
 
-	protected boolean transfer(double value, BasicAccount target) {
+	public boolean transfer(double value, BasicAccount target) {
 		try {
 			this.withdraw(value);
 			target.deposit(value);
