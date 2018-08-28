@@ -1,5 +1,11 @@
 package halfbytebank.bank.Account;
 
+/**
+ * Account for an physical person
+ * @author Paulo Zava
+ * @version 0.1
+ */
+
 public class PhysicalPerson extends BasicAccount{
 
 	public PhysicalPerson(int accountNumber, int bankAgency) {

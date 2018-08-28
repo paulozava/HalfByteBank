@@ -3,7 +3,12 @@ package halfbytebank.bank.Account;
 import halfbytebank.bank.Milliceavous.NumberValuation;
 import halfbytebank.bank.exeptions.BankingExeptions.NegativeValueException;
 import halfbytebank.bank.exeptions.BankingExeptions.NotEnouthBalanceException;
-
+/**
+ * Basic model for an account
+ * @author Paulo Zava
+ * @version 0.1
+ *
+ */
 abstract class BasicAccount {
 
 	private int accountNumber;
@@ -12,6 +17,12 @@ abstract class BasicAccount {
 	private int verificationOfAgency;
 	private double balance;
 	
+	/**
+	 * withdraw an positive amount from an account
+	 *
+	 * @param value
+	 * @return true if successful, else, throw an exception
+	 */
 	public boolean withdraw(double value){
 		if (value <= 0) {
 			throw new NegativeValueException();
@@ -22,6 +33,11 @@ abstract class BasicAccount {
 		return true;
 	}
 	
+	/**
+	 * deposit a positive value into an account
+	 * @param value
+	 * @return true if successful, else, throw an exception
+	 */
 	public boolean deposit(double value){
 		if (value <= 0) {
 			throw new NegativeValueException();
@@ -30,6 +46,12 @@ abstract class BasicAccount {
 		return true;
 	}
 
+	/**
+	 * withdraw an positive amount from an account and deposit it into another account (target)
+	 * @param value
+	 * @param target
+	 * @return
+	 */
 	public boolean transfer(double value, BasicAccount target) {
 		try {
 			this.withdraw(value);
