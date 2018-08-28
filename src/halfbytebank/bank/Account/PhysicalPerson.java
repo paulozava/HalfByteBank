@@ -1,4 +1,4 @@
-package Account;
+package halfbytebank.bank.Account;
 
 public class PhysicalPerson extends BasicAccount{
 

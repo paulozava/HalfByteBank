@@ -1,4 +1,4 @@
-package BankingExeptions;
+package halfbytebank.bank.exeptions.BankingExeptions;
 
 public abstract class BankingExeptions extends RuntimeException{
 	

@@ -1,9 +1,9 @@
-package Client;
+package halfbytebank.bank.Client;
 
 import java.util.Date;
 import java.util.List;
 
-import Milliceavous.IdCode;
+import halfbytebank.bank.Milliceavous.IdCode;
 
 public class Client {
 

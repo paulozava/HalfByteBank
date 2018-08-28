@@ -1,4 +1,4 @@
-package Client;
+package halfbytebank.bank.Client;
 
 public class Adress {
 

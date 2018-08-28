@@ -1,8 +1,8 @@
-package Account;
+package halfbytebank.bank.Account;
 
-import BankingExeptions.NegativeValueException;
-import BankingExeptions.NotEnouthBalanceException;
-import Milliceavous.NumberValuation;
+import halfbytebank.bank.Milliceavous.NumberValuation;
+import halfbytebank.bank.exeptions.BankingExeptions.NegativeValueException;
+import halfbytebank.bank.exeptions.BankingExeptions.NotEnouthBalanceException;
 
 public abstract class BasicAccount {
 

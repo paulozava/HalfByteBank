@@ -1,4 +1,4 @@
-package Milliceavous;
+package halfbytebank.bank.Milliceavous;
 
 public class IdCode {
 

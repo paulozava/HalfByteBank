@@ -1,4 +1,4 @@
-package Account;
+package halfbytebank.bank.Account;
 
 public class Teste{
 	public static void main(String[] args) throws Exception {
