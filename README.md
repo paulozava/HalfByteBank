@@ -1,5 +1,3 @@
-# Half Byte Bank
-
 <img title="Half Byte Bank Logo" style="float: center; " src="https://github.com/paulozava/HalfByteBank/blob/master/hbb_logo.png" align=center>
 
 
