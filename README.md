@@ -1,6 +1,6 @@
 # Half Byte Bank
 
-<div style="float: center;"><img title="Half Byte Bank Logo" style="float: center; " src="https://github.com/paulozava/HalfByteBank/blob/master/hbb_logo.png" align=center></div>
+<img title="Half Byte Bank Logo" style="float: center; " src="https://github.com/paulozava/HalfByteBank/blob/master/hbb_logo.png" align=center>
 
 
 ## What is it?
